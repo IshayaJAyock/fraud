@@ -12,9 +12,13 @@ from sklearn.metrics import roc_auc_score
 
 model_name = 'notebook/xgboost.pkl'
 
-# load the model
-xgboost = open(model_name, 'rb')
-xg_model = joblib.load(xgboost)
+# load saved model
+with open(model_name , 'rb') as f:
+    xg_model = pickle.load(f)
+
+# # load the model
+# xgboost = open(model_name, 'rb')
+# xg_model = joblib.load(xgboost)
 
 # print(xg_model)
 
