@@ -1,8 +1,8 @@
 from optparse import Values
 import pickle
 import pandas as pd
-#import joblib
-from sklearn.externals import joblib
+import joblib
+#from sklearn.externals import joblib
 import numpy as np
 import streamlit
 
