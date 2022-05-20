@@ -10,7 +10,7 @@ import streamlit
 #from sklearn.metrics import roc_auc_score
 
 
-model_name = 'notebook/xgboost.pkl'
+model_name = 'xgboost.pkl'
 
 # load saved model
 with open(model_name , 'rb') as f:
