@@ -1,24 +1,19 @@
 from optparse import Values
 import pickle
 import pandas as pd
-#import joblib
-#from sklearn.externals import joblib
+import joblib
 import numpy as np
 import streamlit
 
-#from sklearn import metrics
-#from sklearn.metrics import roc_auc_score
+from sklearn import metrics
+from sklearn.metrics import roc_auc_score
 
 
-model_name = 'xgboost.pkl'
+model_name = 'notebook/xgboost.pkl'
 
-# load saved model
-with open(model_name , 'rb') as f:
-    xg_model = pickle.load(f)
-
-# # load the model
-# xgboost = open(model_name, 'rb')
-# xg_model = joblib.load(xgboost)
+# load the model
+xgboost = open(model_name, 'rb')
+xg_model = joblib.load(xgboost)
 
 # print(xg_model)
 
