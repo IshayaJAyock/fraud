@@ -7,7 +7,7 @@ import numpy as np
 import streamlit
 
 #from sklearn import metrics
-from sklearn.metrics import roc_auc_score
+#from sklearn.metrics import roc_auc_score
 
 
 model_name = 'notebook/xgboost.pkl'
