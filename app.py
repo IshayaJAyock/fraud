@@ -9,7 +9,7 @@ from sklearn import metrics
 from sklearn.metrics import roc_auc_score
 
 
-model_name = 'notebook/xgboost.pkl'
+model_name = 'xgboost.pkl'
 
 # load the model
 xgboost = open(model_name, 'rb')
